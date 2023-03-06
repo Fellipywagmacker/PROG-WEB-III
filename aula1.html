@@ -1,75 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Formulário </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+#tela{
+    width: 490px;
+    height: 1000px;
+    position: absolute;
+    left: 40%;
+    top: auto;
+    bottom: auto;
+    border: solid 1px;
+}
 
-    <div id="tela"> 
-        <div id="aplicacao"> 
-            <form id="form">
-                <div id="circ"> 1 </div> <div id="cent">  Dados Pessoais </div> 
-                    <h2 id="titulo"> Cadastrar usuário </h2> <br><br>
-                    <!-- Nome -->
-                    <label> Nome: </label> <br>
-                    <input type="text" id="tam"> <br><br>
+#aplicacao{
+    margin: 20px;
+    background-color: #F5F5F5;
+    width: 450px;
+    height: 970px;
+    display: flex;
+    justify-content: center;
+}
 
-                    <!-- Email -->
-                    <label> Email: </label> <br>
-                    <input type="text" id="tam"> <br><br>
+#tam{
+    width: 400px;
+    height: 22px;
+    font-size: 18px;
+    margin: 0;
+    padding: 7px;
+    outline: 0;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: #e9e9e9;
+    color: black;
+    border: 0;
 
-                    <!-- Senha -->
-                    <label> Senha: </label> <br>
-                    <input type="password" id="tam"> <br><br>
+}
 
-                    <!-- Confirma Senha -->
-                    <label> Confirma Senha: </label> <br>
-                    <input type="password" id="tam"> <br><br>
+#titulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
 
-                    <!-- Idade -->
-                    <label> Idade: </label> <br>
-                    <input type="radio">
-                    <label> Acima 17 </label> <br>
-                    <input type="radio"> 
-                    <label> Abaixo ou igual 17 </label> <br> <br>
+#num_circ{
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    top: 70px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(41, 204, 41);
+}
 
-                    <!-- Pefil 2 -->
-                    <div id="perfil"> 2 </div> <div id="perfil_2">  Dados Pessoais </div> <br><br>
+#cent{
+    position: absolute;
+    top: 88px;
+    left: 65px;
+    font-size: 20px;
 
-                    <!-- Descrição -->
-                    <label for="descricao"> Descrição: </label><br>
-                    <textarea id="descricao" name="descricao" rows="4" cols="30"> </textarea> <br> <br>
+}
 
-                    <!-- Perfil trabalho -->
-                    <label for="trab"> Perfil trabalho: </label><br>
-                    <select name="areas" id="areas"> 
-                        <option value="Front_End Developer" > Front_End Developer </option>
-                        <option value="Front_End Developer" > Back_End Developer </option>
-                        <option value="Front_End Developer" > Desktop Software Developer </option>
-                        <option value="Front_End Developer" > Game Developer </option>
-                        <option value="Front_End Developer" > Security Developer </option>
-                    </select> <br><br>
+#circ{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 88px;
+    height: 23px;
+    width: 25px;
+    background-color: rgb(41, 204, 41);
+    color: white;
+    font-size: 20px;
+}
 
-                    <!-- Interesse -->
-                    <label for="inte"> Interesses: </label><br>
-                    <input type="checkbox" id="inte" name="inte">
-                    <label> Programador </label><br>
-
-                    <input type="checkbox" id="inte" name="inte">
-                    <label> Design </label><br>
-
-                    <input type="checkbox" id="inte" name="inte">
-                    <label> Analista </label><br><br>
-
-                    <!-- Botão -->
-                    <button type="submit" id="bot"> Enviar dados </button> 
-            </form>
-        </div>
-    </div>
+#perfil{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 570px;
+    height: 23px;
+    width: 25px;
+    background-color: rgb(41, 204, 41);
+    color: white;
+    font-size: 20px;
     
-</body>
-</html>
+}
+
+#perfil_2{
+    position: absolute;
+    top: 570px;
+    left: 65px;
+    font-size: 20px;
+}
+
+#areas{
+    width: 410px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#bot{
+    width: 420px;
+    height: 35px;
+    color: white;
+    background-color: rgb(41, 204, 41);
+    font-size: 20px;
+    border: 1px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+#descricao{
+    width: 400px;
+    max-width: 410px;
+    max-height: 100px;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
